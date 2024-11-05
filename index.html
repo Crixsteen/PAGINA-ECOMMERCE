@@ -1,0 +1,158 @@
+!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La mia App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #083f4c;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header e Navbar */
+        .header {
+            text-align: right;
+            padding: 10px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: white;
+            width: calc(100% - 20px);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .nav-link {
+            font-size: 14px;
+            margin-left: 10px;
+            margin-right: 10px;
+            color: #000;
+            text-decoration: none;
+        }
+        .nav-link:hover {
+            color: #d2a75b;
+        }
+
+        /* Contenitore principale */
+        .container {
+            background-color: #fdf1ec;
+            width: 80%;
+            max-width: 900px;
+            margin: 60px auto 80px auto; /* margine inferiore aumentato */
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Input di ricerca e selezione categoria ridotti */
+        .search-container input,
+        .form-select {
+            padding: 5px;
+            font-size: 0.85rem;
+            width: 80%;
+            margin: 5px auto;
+        }
+
+        /* Lista dei prodotti con margine inferiore */
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 20px; /* Margine inferiore per separare dalla barra */
+        }
+        .product {
+            background-color: #083f4c;
+            border: 1px solid #d2a75b;
+            border-radius: 8px;
+            padding: 8px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            transform: scale(0.8); /* Ridotto per risparmiare spazio verticale */
+        }
+        .product img {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .product-info h2 {
+            font-size: 0.9rem;
+            color: #d2a75b;
+            margin: 5px 0;
+        }
+        .product-info p {
+            font-size: 0.8rem;
+            margin: 3px 0;
+        }
+        .price {
+            font-weight: bold;
+            color: #d2a75b;
+            font-size: 0.8rem;
+        }
+
+        /* Barra inferiore */
+        .footer-bar {
+            background-color: white;
+            width: calc(100% - 20px);
+            position: fixed;
+            bottom: 0;
+            left: 10px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .footer-icons {
+            font-size: 20px;
+            color: #083f4c;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+    <script src="app.js"></script>
+
+    <!-- Barra inferiore con icone social -->
+    <div class="footer-bar">
+        <a href="https://www.facebook.com" class="footer-icons" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com" class="footer-icons" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

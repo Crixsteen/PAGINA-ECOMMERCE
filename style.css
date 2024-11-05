@@ -1,0 +1,167 @@
+/* Link al mockup di design: https://drive.google.com/file/d/15HTq2FzO0OkXaN-ypIxuFY_wpNQAIe00/view?usp=sharing */
+
+/* Stile generale */
+body {
+    background-color: #083f4c;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.container {
+    background-color: #fdf1ec;
+    width: 80%;
+    max-width: 900px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #083f4c;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #d2a75b;
+}
+
+/* Titolo e sezione di ricerca */
+header h1 {
+    font-size: 2rem;
+    color: #083f4c;
+    margin-bottom: 20px;
+}
+
+/* Barra di ricerca */
+.search-container {
+    margin-bottom: 15px;
+}
+
+.form-control, .form-select {
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 1px solid #d2a75b;
+}
+
+/* Contenuto principale */
+.main-content {
+    margin-top: 20px;
+}
+
+/* Stile dei prodotti */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Due prodotti per riga */
+    gap: 20px;
+}
+
+.product {
+    background-color: #083f4c;
+    border: 1px solid #d2a75b;
+    border-radius: 10px;
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-info {
+    text-align: center;
+}
+
+.product-info h2 {
+    font-size: 1.2rem;
+    color: #d2a75b;
+    margin: 10px 0 5px;
+}
+
+.product-info p {
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: bold;
+    color: #d2a75b;
+}
+
+/* Paginazione */
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d2a75b;
+    color: #fff;
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed
+    
+    .header {
+    background-color: #083f4c; /* Colore di sfondo della testata */
+    color: #fff; /* Colore del testo */
+    padding: 10px; /* Spaziatura interna */
+}
+
+.header .btn-link {
+    color: #fff; /* Colore del testo */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    margin-left: 15px; /* Spaziatura tra i pulsanti */
+}
+
+.header .btn-link:hover {
+    color: #d2a75b; /* Colore al passaggio del mouse */
+}
+
+.nav-container {
+    display: flex;
+    background-color: #fff; /* Colore di sfondo bianco */
+    padding: 10px; /* Spaziatura interna */
+    border-radius: 5px; /* Angoli arrotondati */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Ombra per il riquadro */
+    max-width: 300px; /* Larghezza massima del riquadro */
+    margin-left: auto; /* Allinea a destra */
+}
